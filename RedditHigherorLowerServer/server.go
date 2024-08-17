@@ -1,7 +1,11 @@
 package main
 
-import datamanipulation "RedditHigherorLowerServer/DataManipulation"
+import (
+	envfilequery "RedditHigherorLowerServer/DataManipulation/envfileQuery"
+)
 
 func main() {
-	datamanipulation.GetSubreddits()
+	envfilequery.Parse()
+
+	//datamanipulation.GetSubreddits()
 }

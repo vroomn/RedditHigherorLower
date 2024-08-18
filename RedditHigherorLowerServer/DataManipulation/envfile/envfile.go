@@ -1,4 +1,4 @@
-package envfilequery
+package envfile
 
 import (
 	"io"

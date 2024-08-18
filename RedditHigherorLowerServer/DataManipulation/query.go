@@ -31,7 +31,6 @@ func getKey(byteArr []byte, key string) string {
 	for i := 0; i < int(len(byteArr)-keyLen); i++ {
 		checkSequence = string(byteArr[i : i+keyLen])
 
-		//fmt.Println(checkSequence)
 		if checkSequence == key {
 			i += keyLen + 3
 			for byteArr[i] != '"' && byteArr[i] != ',' {
